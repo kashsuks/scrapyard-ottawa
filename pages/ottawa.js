@@ -418,7 +418,7 @@ export default function ExampleCity() {
         sx={{
           // backgroundImage: "url(/backgrounds/confetti.png)",
           alignItems: 'center',
-          display: 'flex',
+          display: 'flex', 
           flexDirection: 'column'
         }}
       >
