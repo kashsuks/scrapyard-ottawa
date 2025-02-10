@@ -621,28 +621,19 @@ export default function Ottawa() {
           <Map />
         </Box>
       </Box>
-
       <Box
         sx={{
           width: '100%',
-          background: "url('/backgrounds/lined-paper.png')",
-          backgroundSize: ['contain', 'contain', 'cover!important'],
+          background: 'rgb(246,136,135)', // Sponsor section background color
+          py: 4,
           display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
           flexDirection: 'column',
-          gap: '20px',
-          p: [4, 4, 5],
-          pt: 6,
-          position: 'relative'
+          alignItems: 'center'
         }}
       >
         <Box
           sx={{
-            backgroundImage: 'url(/elements/ripped-paper-strip.png)',
-            // backgroundSize: "cover!important",
-            // display: "block",
-            // width: "30vw",
+            backgroundImage: 'url(/elements/ripped-paper-strip.svg)',
             height: '30vh',
             width: ['90vw', '70vw', '46.8vw'],
             alignItems: 'center',
@@ -661,45 +652,57 @@ export default function Ottawa() {
               mx: '1vw',
               fontWeight: 'lighter',
               textAlign: 'center',
-              color: 'white',
+              color: 'Black',
             }}
           >
-            {/* TODO: Change Ottawa to your event's city */}
             OUR SPONSORS!!
           </Heading>
         </Box>
-          <Box
+        <Box
+          sx={{
+            backgroundImage: "url('/elements/yellow-strip@stretch.svg')",
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: '100% 100%',
+            filter: 'drop-shadow(5px 5px 5px #000)',
+            transition: 'transform 0.2s',
+            ':hover': {
+              transform: 'scale(1.1)'
+            },
+            zIndex: 20,
+            padding: 1,
+            my: 3
+          }}
+        >
+          <Heading
+            as="h2"
             sx={{
-              backgroundImage: "url('/elements/yellow-strip@stretch.svg')",
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: '100% 100%',
-              filter: 'drop-shadow(5px 5px 5px #000)',
-              transition: 'transform 0.2s',
-              ':hover': {
-                transform: 'scale(1.1)'
-              },
-              zIndex: 20,
-              padding: 1,
-              my: 3
+              fontFamily: 'moonblossom',
+              textAlign: 'center',
+              margin: '8%',
+              fontSize: ['1.2em', '1.4em'],
+              textTransform: 'inherit!important',
+              paddingY: ['15px', '0px']
             }}
           >
-            <Heading
-              as="h2"
-              sx={{
-                fontFamily: 'moonblossom',
-                textAlign: 'center',
-                margin: '8%',
-                fontSize: ['1.2em', '1.4em'],
-                textTransform: 'inherit!important',
-                paddingY: ['15px', '0px']
-              }}
-            >
-              {/* TODO: Change Ottawa to your event's city */}
-              COMING 
-              SOON!!
-            </Heading>
-          </Box>
-        
+            COMING SOON!!
+          </Heading>
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          width: '100%',
+          background: "url('/backgrounds/lined-paper.png')",
+          backgroundSize: ['contain', 'contain', 'cover!important'],
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexDirection: 'column',
+          gap: '20px',
+          p: [4, 4, 5],
+          pt: 6,
+          position: 'relative'
+        }}
+      >
         <Heading
           as="h1"
           sx={{
