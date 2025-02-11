@@ -568,9 +568,6 @@ export default function Ottawa() {
         <Box
           sx={{
             backgroundImage: 'url(/elements/ripped-paper-strip.svg)',
-            // backgroundSize: "cover!important",
-            // display: "block",
-            // width: "30vw",
             height: '30vh',
             width: ['90vw', '70vw', '46.8vw'],
             alignItems: 'center',
@@ -624,7 +621,7 @@ export default function Ottawa() {
       <Box
         sx={{
           width: '100%',
-          background: 'rgb(246,136,135)', // Sponsor section background color
+          background: 'rgb(246,136,135)',
           py: 4,
           display: 'flex',
           flexDirection: 'column',
@@ -634,8 +631,8 @@ export default function Ottawa() {
         <Box
           sx={{
             backgroundImage: 'url(/elements/ripped-paper-strip.svg)',
-            height: '30vh',
-            width: ['90vw', '70vw', '46.8vw'],
+            height: '40vh',
+            width: ['95vw', '80vw', '60vw'],
             alignItems: 'center',
             justifyContent: 'center',
             margin: '0vh',
@@ -653,40 +650,51 @@ export default function Ottawa() {
               fontWeight: 'lighter',
               textAlign: 'center',
               color: 'Black',
+              fontSize: ['2em', '2.5em', '3em']
             }}
           >
             OUR SPONSORS!!
           </Heading>
         </Box>
-        <Box
+        <Heading
+        as="h2"
+        sx={{
+          fontFamily: 'moonblossom',
+          textAlign: 'center',
+          fontSize: ['1.5em', '1.8em', '2.2em'],
+          color: 'rgb(0, 114, 188)',
+          my: 3
+        }}
+      >
+        Title Sponsor!
+      </Heading>
+
+      <Link href="https://www.thalesgroup.com/en/canada" target="_blank" sx={{ display: 'block' }}> {/* Added Link component */}
+        <Image
+          src="/city/ottawa/thales.png"
           sx={{
-            backgroundImage: "url('/elements/yellow-strip@stretch.svg')",
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: '100% 100%',
-            filter: 'drop-shadow(5px 5px 5px #000)',
-            transition: 'transform 0.2s',
+            maxWidth: ['100%', '50%'],
+            height: 'auto',
+            transition: 'transform 0.2s', // Added transition for smooth animation
             ':hover': {
-              transform: 'scale(1.1)'
-            },
-            zIndex: 20,
-            padding: 1,
-            my: 3
+              transform: 'scale(1.05)', // Scale up slightly on hover
+              filter: 'drop-shadow(0px 0px 5px rgba(0,0,0,0.2))' // Add a subtle shadow
+            }
           }}
-        >
-          <Heading
-            as="h2"
-            sx={{
-              fontFamily: 'moonblossom',
-              textAlign: 'center',
-              margin: '8%',
-              fontSize: ['1.2em', '1.4em'],
-              textTransform: 'inherit!important',
-              paddingY: ['15px', '0px']
-            }}
-          >
-            COMING SOON!!
-          </Heading>
-        </Box>
+        />
+      </Link> {/* Close Link component */}
+
+      <Text
+        sx={{
+          fontSize: ['2em', '2.2em', '2.4em'],
+          textAlign: ['center', 'left'],
+          flexGrow: 1,
+          mt: [3, 0]
+        }}
+      >
+        Thales Canada!!
+      </Text>
+
       </Box>
       <Box
         sx={{
