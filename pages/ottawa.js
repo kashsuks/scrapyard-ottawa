@@ -657,43 +657,33 @@ export default function Ottawa() {
           </Heading>
         </Box>
         <Heading
-        as="h2"
-        sx={{
-          fontFamily: 'moonblossom',
-          textAlign: 'center',
-          fontSize: ['1.5em', '1.8em', '2.2em'],
-          color: 'rgb(0, 114, 188)',
-          my: 3
-        }}
-      >
-        Title Sponsor!
-      </Heading>
-
-      <Link href="https://www.thalesgroup.com/en/canada" target="_blank" sx={{ display: 'block' }}> {/* Added Link component */}
-        <Image
-          src="/city/ottawa/thales.png"
+          as="h2"
           sx={{
-            maxWidth: ['100%', '50%'],
-            height: 'auto',
-            transition: 'transform 0.2s', // Added transition for smooth animation
-            ':hover': {
-              transform: 'scale(1.05)', // Scale up slightly on hover
-              filter: 'drop-shadow(0px 0px 5px rgba(0,0,0,0.2))' // Add a subtle shadow
-            }
+            fontFamily: 'moonblossom',
+            textAlign: 'center',
+            fontSize: ['1.5em', '1.8em', '2.2em'],
+            color: 'rgb(0, 114, 188)',
+            my: 0,
           }}
-        />
-      </Link> {/* Close Link component */}
+        >
+          Title Sponsor!
+        </Heading>
 
-      <Text
-        sx={{
-          fontSize: ['2em', '2.2em', '2.4em'],
-          textAlign: ['center', 'left'],
-          flexGrow: 1,
-          mt: [3, 0]
-        }}
-      >
-        Thales Canada!!
-      </Text>
+        <Link href="https://www.thalesgroup.com/en/canada" target="_blank" sx={{ display: 'block' }}>
+          <Image
+            src="/city/ottawa/thales.png"
+            sx={{
+              width: '400px',
+              height: 'auto',
+              mt: 0,
+              transition: 'transform 0.2s',
+              ':hover': {
+                transform: 'scale(1.05)',
+                filter: 'drop-shadow(0px 0px 5px rgba(0,0,0,0.2))'
+              }
+            }}
+          />
+        </Link>
 
       </Box>
       <Box
