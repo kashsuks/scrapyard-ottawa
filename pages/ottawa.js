@@ -20,6 +20,7 @@ Note: To test your changes locally, use `npm install` and `npm run dev`.
 */
 
 import Head from 'next/head'
+
 import { Box, Card, Grid, Heading, Image, Link, Text } from 'theme-ui'
 import dynamic from 'next/dynamic'
 
@@ -64,7 +65,7 @@ const Flag = () => (
   </Link>
 )
 
-export default function ExampleCity() {
+export default function Ottawa() {
   return (
     <Box
       sx={{
@@ -418,10 +419,46 @@ export default function ExampleCity() {
         sx={{
           // backgroundImage: "url(/backgrounds/confetti.png)",
           alignItems: 'center',
-          display: 'flex', 
+          display: 'flex',
           flexDirection: 'column'
         }}
-      >
+      > 
+      <Link
+          // TODO: Change Ottawa to your event's slug (lowercase, dashed version of your event name), such as san-francisco for Scrapyard San Francisco
+          href="https://hcb.hackclub.com/donations/start/ottawa"
+          target="_blank"
+        >
+          <Box
+            sx={{
+              backgroundImage: "url('/elements/yellow-strip@stretch.svg')",
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: '100% 100%',
+              filter: 'drop-shadow(5px 5px 5px #000)',
+              transition: 'transform 0.2s',
+              ':hover': {
+                transform: 'scale(1.1)'
+              },
+              zIndex: 20,
+              padding: 1,
+              my: 3
+            }}
+          >
+            <Heading
+              as="h2"
+              sx={{
+                fontFamily: 'moonblossom',
+                textAlign: 'center',
+                margin: '8%',
+                fontSize: ['1.2em', '1.4em'],
+                textTransform: 'inherit!important',
+                paddingY: ['15px', '0px']
+              }}
+            >
+              {/* TODO: Change Ottawa to your event's city */}
+              WANNA DONATE?
+            </Heading>
+          </Box>
+        </Link>
         <Box
           sx={{
             backgroundImage: 'url(/elements/ripped-paper-strip.svg)',
@@ -531,9 +568,6 @@ export default function ExampleCity() {
         <Box
           sx={{
             backgroundImage: 'url(/elements/ripped-paper-strip.svg)',
-            // backgroundSize: "cover!important",
-            // display: "block",
-            // width: "30vw",
             height: '30vh',
             width: ['90vw', '70vw', '46.8vw'],
             alignItems: 'center',
@@ -584,7 +618,143 @@ export default function ExampleCity() {
           <Map />
         </Box>
       </Box>
+      <Box
+        // Sponsor Section
+          sx={{
+            background: "url('/backgrounds/lined-paper.png')",
+            backgroundSize: 'cover!important',
+            backgroundPosition: 'center center',
+            backgroundImage: 'url(/elements/lined-paper-strip.svg)',
+            display: 'block',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column',
+            overflow: 'visible',
+            gap: '20px',
+            height: '100vh',
+            position: 'relative'
+          }}
+        > 
+        <Heading
+              as="h2"
+              sx={{
+              fontSize: '5em',
+              fontFamily: 'moonblossom',
+              color: 'pink',
+              textAlign: 'center',
+              mx: '5vw'
+                  }}
+        >
+        Sponsors
+        <Image
+              src="/elements/doodles/blue-underline.svg"
+              sx={{
+              bottom: '0',            
+              }}
+            />
+        </Heading>
 
+        <Link
+        // Thales
+        href="https://www.thalesgroup.com/en"
+        target="_blank"
+        aria-label="Thales"
+        sx={{ position: 'absolute', top: 230, left: 430, zIndex: 2}}
+    >
+      <Image
+        src="/city/ottawa/thales.jpg"
+        alt="Thales Title Sponsor"
+        sx={{
+          width: [120, 128, 700],
+          transformOrigin: '% 0%',
+          transition: 'transform 0.1s',
+          ':hover': {
+            transform: 'rotate(0.03turn) scale(1.2) translateY(-4px)'
+          }
+        }}
+      />
+      </Link>
+      <Link
+        // Ross video
+        href="https://www.rossvideo.com/"
+        target="_blank"
+        aria-label="Ross Video"
+        sx={{ position: 'absolute', top: 550, left: 20, zIndex: 2 }}
+    >
+      <Image
+        src="/city/ottawa/ross.png"
+        alt="Ross Video"
+        sx={{
+          width: [120, 128, 450],
+          transformOrigin: '% 0%',
+          transition: 'transform 0.1s',
+          ':hover': {
+            transform: 'rotate(0.03turn) scale(1.2) translateY(-4px)'
+          }
+        }}
+      />
+      </Link>
+      {/* <Link
+        // Mathnasium
+        href="https://www.mathnasium.com/ca/"
+        target="_blank"
+        aria-label="Mathnasium"
+        sx={{ position: 'absolute', top: 460, left: 470, zIndex: 2 }}
+    >
+      <Image
+        src="/city/ottawa/mathnasium.png"
+        alt="Incogni"
+        sx={{
+          width: [120, 128, 270],
+          transformOrigin: '% 0%',
+          transition: 'transform 0.1s',
+          ':hover': {
+            transform: 'rotate(0.03turn) scale(1.2) translateY(-4px)'
+          }
+        }}
+      />
+      </Link> */}
+      <Link
+        // xyz
+        href="https://gen.xyz/"
+        target="_blank"
+        aria-label="Nord Pass"
+        sx={{ position: 'absolute', top: 550, left: 810, zIndex: 2 }}
+    >
+      <Image
+        src="/city/ottawa/xyz.png"
+        alt="Nord Pass"
+        sx={{
+          width: [120, 128, 325],
+          transformOrigin: '% 0%',
+          transition: 'transform 0.1s',
+          ':hover': {
+            transform: 'rotate(0.03turn) scale(1.2) translateY(-4px)'
+          }
+        }}
+      />
+      </Link>
+      <Link
+        // Saily
+        href="https://saily.com/ "
+        target="_blank"
+        aria-label="Saily"
+        sx={{ position: 'absolute', top: 400, left: 1150, zIndex: 2 }}
+    >
+      <Image
+        src="/city/hamilton/saily.png"
+        alt="Saily"
+        sx={{
+          width: [120, 128, 325],
+          transformOrigin: '% 0%',
+          transition: 'transform 0.1s',
+          ':hover': {
+            transform: 'rotate(0.03turn) scale(1.2) translateY(-4px)'
+          }
+        }}
+      />
+      </Link>
+        </Box>
       <Box
         sx={{
           width: '100%',
