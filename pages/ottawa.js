@@ -679,7 +679,7 @@ export default function Ottawa() {
         href="https://www.rossvideo.com/"
         target="_blank"
         aria-label="Ross Video"
-        sx={{ position: 'absolute', top: 500, left: 20, zIndex: 2 }}
+        sx={{ position: 'absolute', top: 550, left: 20, zIndex: 2 }}
     >
       <Image
         src="/city/ottawa/ross.png"
@@ -694,7 +694,7 @@ export default function Ottawa() {
         }}
       />
       </Link>
-      <Link
+      {/* <Link
         // Mathnasium
         href="https://www.mathnasium.com/ca/"
         target="_blank"
@@ -713,16 +713,16 @@ export default function Ottawa() {
           }
         }}
       />
-      </Link>
+      </Link> */}
       <Link
-        // Nord Pass
-        href="https://nordpass.com/"
+        // xyz
+        href="https://gen.xyz/"
         target="_blank"
         aria-label="Nord Pass"
-        sx={{ position: 'absolute', top: 460, left: 810, zIndex: 2 }}
+        sx={{ position: 'absolute', top: 550, left: 810, zIndex: 2 }}
     >
       <Image
-        src="/city/hamilton/nordpass.png"
+        src="/city/ottawa/xyz.png"
         alt="Nord Pass"
         sx={{
           width: [120, 128, 325],
