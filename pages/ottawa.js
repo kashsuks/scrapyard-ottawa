@@ -738,7 +738,7 @@ export default function Ottawa() {
         // Hetzner
         href="https://www.hetzner.com/"
         target="_blank"
-        aria-label="Saily"
+        aria-label="Hetzner"
         sx={{ position: 'absolute', top: 570, left: 1050, zIndex: 2 }}
     >
       <Image
