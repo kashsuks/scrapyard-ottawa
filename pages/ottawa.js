@@ -719,7 +719,7 @@ export default function Ottawa() {
         href="https://gen.xyz/"
         target="_blank"
         aria-label="Nord Pass"
-        sx={{ position: 'absolute', top: 550, left: 810, zIndex: 2 }}
+        sx={{ position: 'absolute', top: 550, left: 600, zIndex: 2 }}
     >
       <Image
         src="/city/ottawa/xyz.png"
@@ -735,15 +735,15 @@ export default function Ottawa() {
       />
       </Link>
       <Link
-        // Saily
-        href="https://saily.com/ "
+        // Hetzner
+        href="https://www.hetzner.com/"
         target="_blank"
         aria-label="Saily"
-        sx={{ position: 'absolute', top: 400, left: 1150, zIndex: 2 }}
+        sx={{ position: 'absolute', top: 570, left: 1050, zIndex: 2 }}
     >
       <Image
-        src="/city/hamilton/saily.png"
-        alt="Saily"
+        src="/city/ottawa/hetzner.png"
+        alt="Hetzner"
         sx={{
           width: [120, 128, 325],
           transformOrigin: '% 0%',
