@@ -209,7 +209,7 @@ export default function ExampleCity() {
         </Box>
         <Link
           // TODO: Change [SLUG] to your event's slug (lowercase, dashed version of your event name), such as san-francisco for Scrapyard San Francisco
-          href="https://forms.hackclub.com/scrapyard-signup?event=indonesia"
+          href="https://airtable.com/appigKiF7GbVISAlg/pagCE3QevJXzkMsx8/form"
           target="_blank"
         >
           <Box
@@ -775,9 +775,9 @@ export default function ExampleCity() {
                 We’re here to help! Our parents guide will be released soon, but
                 they can reach out to us at{' '}
                 {/* TODO: Change this email to your event's email */}
-                <Link href="mailto:jakarta@scrapyard.hackclub.com">
+                <Link href="mailto:indonesia@scrapyard.hackclub.com">
                   {/* TODO: Change this email to your event's email */}
-                  jakarta@scrapyard.hackclub.com
+                  indonesia@scrapyard.hackclub.com
                 </Link>{' '}
                 for questions.
               </>
@@ -788,9 +788,9 @@ export default function ExampleCity() {
                 Contact us! Feel free to reach out to us in the #scrapyard-indonesia
                 channel on the Hack Club slack or email us at{' '}
                 {/* TODO: Change this email to your event's email */}
-                <Link href="mailto:jakarta@scrapyard.hackclub.com">
+                <Link href="mailto:indonesia@scrapyard.hackclub.com">
                   {/* TODO: Change this email to your event's email */}
-                  jakarta@scrapyard.hackclub.com
+                  indonesia@scrapyard.hackclub.com
                 </Link>
                 .
               </>
@@ -843,7 +843,7 @@ export default function ExampleCity() {
         </Grid>
         <Link
           // TODO: Change [SLUG] to your event's slug (lowercase, dashed version of your event name), such as san-francisco for Scrapyard San Francisco
-          href="https://forms.hackclub.com/scrapyard-signup?event=indonesia"
+          href="https://airtable.com/appigKiF7GbVISAlg/pagCE3QevJXzkMsx8/form"
           target="_blank"
         >
           <Box

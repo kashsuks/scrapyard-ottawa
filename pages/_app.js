@@ -19,7 +19,7 @@ export default class App extends NextApp {
           <meta
             name="description"
             property="og:description"
-            content="Hack Club's global winter hackathon - build stupid s#!t, get stupid prizes!"
+            content="Hack Club's global winter hackathon - build stupid stuff, get stupid prizes!"
           />
           <meta property="og:image" content="/announcement.png" />
           <script

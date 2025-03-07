@@ -140,7 +140,7 @@ export default function ExampleCity() {
                 margin: '8%'
               }}
             >
-              Build stupid s#!t, get stupid prizes.
+              Build stupid stuff, get stupid prizes.
             </Heading>
           </Box>
           <Box
@@ -173,7 +173,7 @@ export default function ExampleCity() {
                 fontSize: ['1.2em', '1.4em']
               }}
             >
-              BOSTON - March&nbsp;15-16
+              BOSTON - March&nbsp;15
             </Heading>
           </Box>
         </Box>
@@ -638,7 +638,7 @@ export default function ExampleCity() {
             'What do I need?': (
               <>
                 Your laptop, chargers, and an open mind! If you're going to an
-                overnight event, bring toiletries and sleeping bagstoo.
+                overnight event, bring toiletries and sleeping bags too.
                 Additionally, if you plan to work on a hardware project, bring
                 the tools you'll need.
               </>
@@ -683,21 +683,21 @@ export default function ExampleCity() {
               <>
                 We’re here to help! Our parents guide will be released soon, but
                 they can reach out to us at{' '}
-                <Link href="mailto:sofia@hackclub.com">
-                  sofia@hackclub.com
+                <Link href="mailto:boston@scrapyard.hackclub.com">
+                  boston@scrapyard.hackclub.com 
                 </Link>{' '}
                 for questions.
               </>
             ),
             'What if I have more questions?': (
-              <>=
-                Contact us! Feel free to reach out to us in the 
+              <>
+                Contact us! Feel free to reach out to us in the {' '}
                 <Link href="https://hackclub.slack.com/archives/C085VB6F0T1">
                   #scrapyard-boston
-                </Link>
+                </Link>{' '}
                 channel on the Hack Club slack or email us at{' '}
-                <Link href="mailto:sofia@hackclub.com">
-                  sofia@hackclub.com
+                <Link href="mailto:boston@scrapyard.hackclub.com">
+                  boston@scrapyard.hackclub.com 
                 </Link>
                 .
               </>

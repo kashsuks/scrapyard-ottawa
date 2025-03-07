@@ -146,7 +146,7 @@ export default function ExampleCity() {
 
               }}
             >
-              Build stupid s#!t, get stupid prizes.
+              Build stupid stuff, get stupid prizes.
             </Heading>
           </Box>
           <Box

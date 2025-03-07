@@ -143,7 +143,7 @@ export default function ExampleCity() {
                 margin: '8%'
               }}
             >
-              Build stupid s#!t, get stupid prizes.
+              Build stupid stuff, get stupid prizes.
             </Heading>
           </Box>
           <Box
@@ -519,6 +519,143 @@ export default function ExampleCity() {
         </Box>
       </Box>
 
+      <Box
+      // Sponsor Section
+        sx={{
+          background: "url('/backgrounds/lined-paper.png')",
+          backgroundSize: 'cover!important',
+          backgroundPosition: 'center center',
+          backgroundImage: 'url(/elements/lined-paper-strip.svg)',
+          display: 'block',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexDirection: 'column',
+          overflow: 'visible',
+          gap: '20px',
+          height: '100vh',
+          position: 'relative'
+        }}
+      > 
+      <Heading
+            as="h2"
+            sx={{
+            fontSize: '5em',
+            fontFamily: 'moonblossom',
+            color: 'pink',
+            textAlign: 'center',
+            mx: '5vw'
+                }}
+      >
+      Sponsors
+      <Image
+            src="/elements/doodles/blue-underline.svg"
+            sx={{
+             bottom: '0',            
+            }}
+          />
+      </Heading>
+
+      <Link
+      // CoMotion On King
+      href="https://www.comotiongroup.ca/"
+      target="_blank"
+      aria-label="CoMotion On King"
+      sx={{ position: 'absolute', top: 230, left: 430, zIndex: 2}}
+  >
+    <Image
+      src="/city/hamilton/comotion-logo.png"
+      alt="CoMotion On King"
+      sx={{
+        width: [120, 128, 700],
+        transformOrigin: '% 0%',
+        transition: 'transform 0.1s',
+        ':hover': {
+          transform: 'rotate(0.03turn) scale(1.2) translateY(-4px)'
+        }
+      }}
+    />
+    </Link>
+    <Link
+      // Nord VPN
+      href="https://nordvpn.com/hackathons"
+      target="_blank"
+      aria-label="Nord VPN"
+      sx={{ position: 'absolute', top: 395, left: 20, zIndex: 2 }}
+  >
+    <Image
+      src="/city/hamilton/nordvpn.png"
+      alt="Nord VPN"
+      sx={{
+        width: [120, 128, 450],
+        transformOrigin: '% 0%',
+        transition: 'transform 0.1s',
+        ':hover': {
+          transform: 'rotate(0.03turn) scale(1.2) translateY(-4px)'
+        }
+      }}
+    />
+    </Link>
+    <Link
+      // Incogni
+      href="https://incogni.com/"
+      target="_blank"
+      aria-label="Incogni"
+      sx={{ position: 'absolute', top: 460, left: 470, zIndex: 2 }}
+  >
+    <Image
+      src="/city/hamilton/incogni white (3).png"
+      alt="Incogni"
+      sx={{
+        width: [120, 128, 270],
+        transformOrigin: '% 0%',
+        transition: 'transform 0.1s',
+        ':hover': {
+          transform: 'rotate(0.03turn) scale(1.2) translateY(-4px)'
+        }
+      }}
+    />
+    </Link>
+    <Link
+      // Nord Pass
+      href="https://nordpass.com/"
+      target="_blank"
+      aria-label="Nord Pass"
+      sx={{ position: 'absolute', top: 460, left: 810, zIndex: 2 }}
+  >
+    <Image
+      src="/city/hamilton/nordpass.png"
+      alt="Nord Pass"
+      sx={{
+        width: [120, 128, 325],
+        transformOrigin: '% 0%',
+        transition: 'transform 0.1s',
+        ':hover': {
+          transform: 'rotate(0.03turn) scale(1.2) translateY(-4px)'
+        }
+      }}
+    />
+    </Link>
+    <Link
+      // Saily
+      href="https://saily.com/ "
+      target="_blank"
+      aria-label="Saily"
+      sx={{ position: 'absolute', top: 400, left: 1150, zIndex: 2 }}
+  >
+    <Image
+      src="/city/hamilton/saily.png"
+      alt="Saily"
+      sx={{
+        width: [120, 128, 325],
+        transformOrigin: '% 0%',
+        transition: 'transform 0.1s',
+        ':hover': {
+          transform: 'rotate(0.03turn) scale(1.2) translateY(-4px)'
+        }
+      }}
+    />
+    </Link>
+        </Box>
       <Box
         sx={{
           // backgroundImage: "url(/backgrounds/confetti.png)",

@@ -104,7 +104,7 @@ export default function ExampleCity() {
 
               objectFit: 'contain'
             }}
-            src="/elements/wordmark.svg"
+            src="\city\manila\scrapyard-mla.png"
             alt="Scrapyard"
           />
         </Box>
@@ -138,7 +138,7 @@ export default function ExampleCity() {
                 margin: '8%'
               }}
             >
-              Build stupid s#!t, get stupid prizes.
+              Build stupid stuff, get stupid prizes.
             </Heading>
           </Box>
           <Box
@@ -313,7 +313,7 @@ export default function ExampleCity() {
             height: '100%'
           }}
         >
-          <Image src="/elements/orpheus-doodle.svg" />
+          <Image src="\city\manila\scrapyard-grp-pic.png" />
           <Box
             sx={{
               maxWidth: ['80vw', '60vw', '40vw'],

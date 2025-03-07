@@ -3,16 +3,16 @@ import { Box, Card, Grid, Heading, Image, Link, Text } from 'theme-ui'
 import dynamic from 'next/dynamic'
 
 const schedule = [
-  { time: '7:30 AM', event: 'Abren puertas' },
-  { time: '8:00 AM', event: 'Ceremonia de iniciación' },
-  { time: '8:30 AM', event: '¡Empieza a trabajar en tu projecto!' },
+  { time: '7:00 AM', event: 'Abren puertas' },
+  { time: '7:30 AM', event: 'Ceremonia de iniciación' },
+  { time: '8:00 AM', event: '¡Empieza a trabajar en tu projecto!' },
+  { time: '9:00 AM', event: 'Taller 1' },
   { time: '12:00 PM', event: 'Almuerzo' },
-  { time: '2:00 PM', event: 'Taller 1' },
+  { time: '2:00 PM', event: 'Taller 2' },
   { time: '4:00 PM', event: 'Actividad 1' },
-  { time: '4:00 PM', event: 'Taller 2' },
-  { time: '7:30 PM', event: 'Cena' },
-  { time: '8:30 PM', event: '¡Demos!' },
-  { time: '9:00 PM', event: 'Ceremonia de cierre' }
+  { time: '6:15 PM', event: 'Cena' },
+  { time: '7:00 PM', event: '¡Demos!' },
+  { time: '7:30 PM', event: 'Ceremonia de cierre' }
 ]
 
 const Map = dynamic(() => import('../components/Map'), { ssr: false })
@@ -128,7 +128,7 @@ export default function Barranquilla() {
               width: '75%',
               position: 'relative',
               zIndex: 30,
-              top: '-15%',
+              top: '-8%',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -145,25 +145,86 @@ export default function Barranquilla() {
                 wordBreak: 'keep-all',
                 whiteSpace: 'nowrap',
                 width: 'max-content',
-                fontSize: ['1.2em', '1.4em']
+                fontSize: ['1.2em', '1.4em'],
+                textAlign: 'center'
               }}
             >
               Barranquilla - Sábado Marzo&nbsp;15
+              <br />
+              Universidad del Norte, Bloque K
             </Heading>
+          </Box>
+
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              gap: ['20px', '32px'],
+              py: '2%',
+              flexDirection: 'row',
+              flexWrap: 'nowrap',
+              position: 'relative',
+              zIndex: 10,
+              backgroundColor: 'white',
+              borderRadius: '15px',
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+              padding: 4,
+              maxWidth: '90%',
+              margin: 'auto'
+            }}
+          >
+            <Image
+              src="/city/barranquilla/uninorte.png"
+              alt="Universidad del Norte"
+              sx={{
+                width: ['160px', '200px'],
+                height: 'auto',
+                objectFit: 'contain'
+              }}
+            />
+            <Image
+              src="/city/barranquilla/aess.jpg"
+              alt="AESS"
+              sx={{
+                width: ['80px', '100px'],
+                height: ['80px', '100px'],
+                objectFit: 'contain'
+              }}
+            />
+            <Image
+              src="/city/barranquilla/pulpoo.png"
+              alt="Pulpoo"
+              sx={{
+                width: ['160px', '200px'],
+                height: ['80px', '100px'],
+                objectFit: 'contain'
+              }}
+            />
+            <Image
+              src="/city/barranquilla/fca.jpg"
+              alt="FCA"
+              sx={{
+                width: ['80px', '100px'],
+                height: ['80px', '100px'],
+                objectFit: 'contain'
+              }}
+            />
           </Box>
         </Box>
         <Box
           sx={{
             position: 'absolute',
             width: '100%',
-            height: '100vw'
+            height: '100vw',
+            zIndex: 1
           }}
         >
           <Image
             sx={{
               width: '10%',
               height: '10%',
-              zIndex: 2,
+              zIndex: 1,
               position: 'absolute',
               top: '50%',
               left: '10%'
@@ -175,7 +236,7 @@ export default function Barranquilla() {
             sx={{
               width: '10%',
               height: '10%',
-              zIndex: 2,
+              zIndex: 1,
               position: 'absolute',
               top: '55%',
               right: '15%'
@@ -187,7 +248,7 @@ export default function Barranquilla() {
             sx={{
               width: '10%',
               height: '10%',
-              zIndex: 2,
+              zIndex: 1,
               position: 'absolute',
               top: '70%',
               left: '20%',
@@ -649,12 +710,14 @@ export default function Barranquilla() {
             ),
             '¿Qué pasa si mis padres están preocupados?': (
               <>
-                ¡Estamos para ayudarte! Nuestra guía para padres saldrá pronto,
-                pero pueden contactarnos en{' '}
+                ¡Estamos para ayudarte! Nuestro evento se realizará en la
+                Universidad del Norte, en donde tendremos un espacio seguro para
+                todos nuestros participantes. Si tus padres tienen preguntas,
+                mándanos un email a{' '}
                 <Link href="mailto:barranquilla@scrapyard.hackclub.com">
                   barranquilla@scrapyard.hackclub.com
-                </Link>{' '}
-                si tienen preguntas.
+                </Link>
+                .
               </>
             ),
             '¿Qué pasa si tengo más preguntas?': (
