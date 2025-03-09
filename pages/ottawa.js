@@ -521,6 +521,47 @@ export default function Ottawa() {
             </div>
           ))}
         </Box>
+
+{/* Venue Information Section */}
+<Box
+  sx={{
+    background: "white",
+    padding: '30px',
+    borderRadius: '10px',
+    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '80%',
+    maxWidth: '1000px',
+    marginBottom: '50px',
+    marginTop: '50px'
+  }}
+>
+<Heading
+            as="h1"
+            sx={{
+              mx: '1vw',
+              fontWeight: 'bold',
+              textAlign: 'center',
+              color: 'blue',
+              padding: '10px'
+            }}
+          >
+            Where is Scrapyard Ottawa?
+          </Heading>
+  <Heading as="h2">
+    The event will be held at <strong>Nokia</strong>!
+  </Heading>
+  <Heading as="h3" sx={{ marginTop: '10px' }}>
+    600 March Rd, Kanata, ON K2K 2E6, Canada
+  </Heading>
+  <Heading as="h2" sx={{ marginTop: '10px' }}>
+    Can't wait to see you there for a scrappy adventure!
+  </Heading>
+</Box>
+
       </Box>
 
       <Box
@@ -603,7 +644,7 @@ background: "url('/backgrounds/lined-paper.png')",
   }}
 >
   <Heading
-    as="h2"
+    as="h1"
     sx={{
             fontFamily: 'moonblossom',
             textAlign: 'center',
@@ -631,7 +672,7 @@ background: "url('/backgrounds/lined-paper.png')",
               }}
             >
               {/* TODO: Change Ottawa to your event's city */}
-              Thanks to our generous Sponsors!
+              Thanks you to our generous Sponsors!
             </Heading>
             <Box
   sx={{
