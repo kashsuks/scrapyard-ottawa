@@ -228,7 +228,7 @@ export default function Ottawa() {
         </Box>
         <Link
           // TODO: Change Ottawa to your event's slug (lowercase, dashed version of your event name), such as san-francisco for Scrapyard San Francisco
-          href="https://forms.hackclub.com/scrapyard-signup?event=recPrXR3TEibN0QQz"
+          href="https://forms.hackclub.com/scrapyard-signup?event=ottawa"
           target="_blank"
         >
           <Box
