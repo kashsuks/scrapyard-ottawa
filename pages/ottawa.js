@@ -558,7 +558,7 @@ export default function Ottawa() {
     600 March Rd, Kanata, ON K2K 2E6, Canada
   </Heading>
   <Heading as="h2" sx={{ marginTop: '10px' }}>
-    Can't wait to see you there for a scrappy adventure!
+    Sign up today for a scrappy adventure. Spots are limited!
   </Heading>
 </Box>
 
