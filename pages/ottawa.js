@@ -26,15 +26,16 @@ import dynamic from 'next/dynamic'
 
 // TODO: Change this schedule to your own!
 const schedule = [
-  { time: '2:00 PM', event: 'Doors open' },
-  { time: '3:00 PM', event: 'Opening ceremony' },
-  { time: '4:00 PM', event: 'Start working on your project!' },
+  { time: '1:30 PM', event: 'Doors open' },
+  { time: '2:00 PM', event: 'Hacker Sign-in Deadline' },
+  { time: '2:30 PM', event: 'Opening ceremony' },
+  { time: '3:00 PM', event: 'Start working on your project!' },
   { time: '5:00 PM', event: 'Workshop 1' },
   { time: '5:30 PM', event: 'Workshop 2' },
   { time: '6:00 PM', event: 'Supper' },
   { time: '10:00 PM', event: 'Game time!' },
   { time: '12:00 AM', event: 'Midnight surprise' },
-  { time: '8:00 AM', event: 'Breakfast' },
+  { time: '7:00 AM', event: 'Breakfast' },
   { time: '10:30 AM', event: 'Demos!' },
   { time: '12:00 PM', event: 'Lunch' },
   { time: '1:00 PM', event: 'Closing ceremony' },
@@ -423,42 +424,7 @@ export default function Ottawa() {
           flexDirection: 'column'
         }}
       > 
-      <Link
-          // TODO: Change Ottawa to your event's slug (lowercase, dashed version of your event name), such as san-francisco for Scrapyard San Francisco
-          href="https://hcb.hackclub.com/donations/start/ottawa"
-          target="_blank"
-        >
-          <Box
-            sx={{
-              backgroundImage: "url('/elements/yellow-strip@stretch.svg')",
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: '100% 100%',
-              filter: 'drop-shadow(5px 5px 5px #000)',
-              transition: 'transform 0.2s',
-              ':hover': {
-                transform: 'scale(1.1)'
-              },
-              zIndex: 20,
-              padding: 1,
-              my: 3
-            }}
-          >
-            <Heading
-              as="h2"
-              sx={{
-                fontFamily: 'moonblossom',
-                textAlign: 'center',
-                margin: '8%',
-                fontSize: ['1.2em', '1.4em'],
-                textTransform: 'inherit!important',
-                paddingY: ['15px', '0px']
-              }}
-            >
-              {/* TODO: Change Ottawa to your event's city */}
-              WANNA DONATE?
-            </Heading>
-          </Box>
-        </Link>
+      
         <Box
           sx={{
             backgroundImage: 'url(/elements/ripped-paper-strip.svg)',
@@ -500,7 +466,7 @@ export default function Ottawa() {
         >
           {/* TODO: Change Ottawa to your event's city */}
           {/* TODO: Change [DURATION] to your event's duration (12hour, 24hour, 2-day) */}
-          Scrapyard Ottawa is a 24 hour event - Here's the VERY VERY TENTATIVE schedule, more details to come!
+          Scrapyard Ottawa is a 24 hour event - Here's a ROUGH schedule!
         </Heading>
         <Box
           sx={{
@@ -556,6 +522,252 @@ export default function Ottawa() {
           ))}
         </Box>
       </Box>
+
+      <Box
+  sx={{
+    display: 'flex',
+background: "url('/backgrounds/lined-paper.png')",
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: '100vh',
+    position: 'relative',
+    paddingTop: '5vh', // Ensures space above
+    paddingBottom: '5vh', // Ensures space below
+    my: 10 // Increased vertical margin to prevent collisions
+  }}
+>
+
+<Box
+          sx={{
+            backgroundImage: 'url(/elements/ripped-paper-strip.png)',
+            // backgroundSize: "cover!important",
+            // display: "block",
+            // width: "30vw",
+            height: '30vh',
+            width: ['90vw', '70vw', '46.8vw'],
+            alignItems: 'center',
+            justifyContent: 'center',
+            margin: '0vh',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center'
+          }}
+        >
+          <Heading
+            as="h1"
+            sx={{
+              mx: '1vw',
+              fontWeight: 'lighter',
+              textAlign: 'center',
+              color: 'white',
+            }}
+          >
+            {/* TODO: Change Ottawa to your event's city */}
+            SPONSOR A <strong>MAGICAL</strong> WEEKEND
+          </Heading>
+          <Heading
+            as="h3"
+            sx={{
+              mx: '1vw',
+              fontWeight: 'lighter',
+              textAlign: 'center',
+              color: 'white',
+            }}
+          >
+            {/* TODO: Change Ottawa to your event's city */}
+            Help make a difference in the lives of high schoolers!
+          </Heading>
+        </Box>
+        <Link
+          // TODO: Change Ottawa to your event's slug (lowercase, dashed version of your event name), such as san-francisco for Scrapyard San Francisco
+          href="https://hcb.hackclub.com/donations/start/ottawa"
+          target="_blank"
+        >
+          <Box
+            sx={{
+              backgroundImage: "url('/elements/yellow-strip@stretch.svg')",
+              height: '15vh',
+              width: ['20vw', '60vw', '30vw'],
+              backgroundSize: '100% 100%',
+              filter: 'drop-shadow(5px 5px 5px #000)',
+              transition: 'transform 0.2s',
+              ':hover': {
+                transform: 'scale(1.1)'
+              },
+              zIndex: 20,
+              padding: 0.5,
+              my: 0.5
+  }}
+>
+  <Heading
+    as="h2"
+    sx={{
+            fontFamily: 'moonblossom',
+            textAlign: 'center',
+      margin: '8%',
+                fontSize: ['1.2em', '1.4em'],
+                textTransform: 'inherit!important',
+                paddingY: ['15px', '0px']
+              }}
+  >
+    {/* TODO: Change Ottawa to your event's city */}
+              DONATE TO SCRAPYARD OTTAWA
+  </Heading>
+  </Box>
+        </Link>
+        <Heading
+              as="h3"
+              sx={{
+                fontFamily: 'moonblossom',
+                textAlign: 'center',
+                margin: '1%',
+                fontSize: ['1.2em', '1.4em'],
+                textTransform: 'inherit!important',
+                paddingY: ['10px', '0px'],
+                marginTop: '30px'
+              }}
+            >
+              {/* TODO: Change Ottawa to your event's city */}
+              Thanks to our generous Sponsors!
+            </Heading>
+            <Box
+  sx={{
+    background: "white",
+    padding: '50px',
+    borderRadius: '10px',
+    boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '80%',
+    maxWidth: '1000px',
+    marginBottom: '50px'
+  }}
+>
+  {/* Title Sponsor (Largest) */}
+  <Link href="https://www.thalesgroup.com/en" target="_blank" aria-label="Thales">
+    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <Image
+        src="/city/ottawa/thales.jpg"
+        alt="Thales Title Sponsor"
+        sx={{ 
+          width: "100%", 
+          maxWidth: '750px', 
+          transition: 'transform 0.1s', 
+          ':hover': { transform: 'scale(1.1) translateY(-4px)' } 
+        }}
+      />
+    </Box>
+  </Link>
+
+  {/* Row 1: Large Logos */}
+  <Box 
+    sx={{ 
+      display: 'flex', 
+      justifyContent: 'center', 
+      alignItems: 'center', // Centers vertically 
+      gap: '40px', 
+      flexWrap: 'wrap', 
+      marginTop: '20px' 
+    }}
+  >
+    <Link href="https://www.nokia.com/about-us/careers/our-locations/canada/" target="_blank" aria-label="Nokia">
+        <Image
+          src="/city/ottawa/Nokia.png"
+          alt="Nokia"
+          sx={{ 
+            width: "100%", 
+            maxWidth: '450px', 
+            transition: 'transform 0.1s', 
+            ':hover': { transform: 'scale(1.1) translateY(-4px)' } 
+          }}
+        />
+    </Link>
+
+    <Link href="https://www.rossvideo.com/" target="_blank" aria-label="Ross Video">
+        <Image
+          src="/city/ottawa/ross.png"
+          alt="Ross Video"
+          sx={{ 
+            width: "90%", 
+            maxWidth: '350px', 
+            transition: 'transform 0.1s', 
+            ':hover': { transform: 'scale(1.1) translateY(-4px)' } 
+          }}
+        />
+    </Link>
+  </Box>
+
+  {/* Row 2: Medium Logos */}
+  <Box 
+    sx={{ 
+      display: 'flex', 
+      justifyContent: 'center', 
+      alignItems: 'center', // Centers vertically
+      gap: "150px", 
+      flexWrap: 'wrap', 
+      marginTop: '30px' 
+    }}
+  >
+    <Link href="https://www.wesleyclover.com/" target="_blank" aria-label="Wesley Clover">
+        <Image
+          src="/city/ottawa/wesley_clover.png"
+          alt="Wesley Clover"
+          sx={{ 
+            width: "150%",
+            maxWidth: '600px', 
+            transition: 'transform 0.1s', 
+            ':hover': { transform: 'scale(1.1) translateY(-4px)' } 
+          }}
+        />
+    </Link>
+
+    <Link href="https://gen.xyz/" target="_blank" aria-label="XYZ">
+        <Image
+          src="/city/ottawa/xyz.png"
+          alt="XYZ"
+          sx={{ 
+            width: "80%",
+            maxWidth: '200px', 
+            transition: 'transform 0.1s', 
+            ':hover': { transform: 'scale(1.1) translateY(-4px)' }
+          }}
+        />
+    </Link>
+  </Box>
+
+  {/* Row 3: Smallest Logos
+  <Box 
+    sx={{ 
+      display: 'flex', 
+      justifyContent: 'center', 
+      alignItems: 'center', // Centers vertically
+      gap: '40px', 
+      flexWrap: 'wrap', 
+      marginTop: '30px' 
+    }}
+  >
+    <Link href="https://saily.com/" target="_blank" aria-label="Saily">
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Image
+          src="/city/hamilton/saily.png"
+          alt="Saily"
+          sx={{ 
+            width: ['40%', '35%', '30%'], 
+            maxWidth: '250px', 
+            transition: 'transform 0.1s', 
+            ':hover': { transform: 'scale(1.1) translateY(-4px)' } 
+          }}
+        />
+      </Box>
+    </Link>
+  </Box> */}
+</Box>
+</Box>
 
       <Box
         sx={{
@@ -618,143 +830,7 @@ export default function Ottawa() {
           <Map />
         </Box>
       </Box>
-      <Box
-        // Sponsor Section
-          sx={{
-            background: "url('/backgrounds/lined-paper.png')",
-            backgroundSize: 'cover!important',
-            backgroundPosition: 'center center',
-            backgroundImage: 'url(/elements/lined-paper-strip.svg)',
-            display: 'block',
-            justifyContent: 'center',
-            alignItems: 'center',
-            flexDirection: 'column',
-            overflow: 'visible',
-            gap: '20px',
-            height: '100vh',
-            position: 'relative'
-          }}
-        > 
-        <Heading
-              as="h2"
-              sx={{
-              fontSize: '5em',
-              fontFamily: 'moonblossom',
-              color: 'pink',
-              textAlign: 'center',
-              mx: '5vw'
-                  }}
-        >
-        Sponsors
-        <Image
-              src="/elements/doodles/blue-underline.svg"
-              sx={{
-              bottom: '0',            
-              }}
-            />
-        </Heading>
 
-        <Link
-        // Thales
-        href="https://www.thalesgroup.com/en"
-        target="_blank"
-        aria-label="Thales"
-        sx={{ position: 'absolute', top: 230, left: 430, zIndex: 2}}
-    >
-      <Image
-        src="/city/ottawa/thales.jpg"
-        alt="Thales Title Sponsor"
-        sx={{
-          width: [120, 128, 700],
-          transformOrigin: '% 0%',
-          transition: 'transform 0.1s',
-          ':hover': {
-            transform: 'rotate(0.03turn) scale(1.2) translateY(-4px)'
-          }
-        }}
-      />
-      </Link>
-      <Link
-        // Ross video
-        href="https://www.rossvideo.com/"
-        target="_blank"
-        aria-label="Ross Video"
-        sx={{ position: 'absolute', top: 550, left: 20, zIndex: 2 }}
-    >
-      <Image
-        src="/city/ottawa/ross.png"
-        alt="Ross Video"
-        sx={{
-          width: [120, 128, 450],
-          transformOrigin: '% 0%',
-          transition: 'transform 0.1s',
-          ':hover': {
-            transform: 'rotate(0.03turn) scale(1.2) translateY(-4px)'
-          }
-        }}
-      />
-      </Link>
-      {/* <Link
-        // Mathnasium
-        href="https://www.mathnasium.com/ca/"
-        target="_blank"
-        aria-label="Mathnasium"
-        sx={{ position: 'absolute', top: 460, left: 470, zIndex: 2 }}
-    >
-      <Image
-        src="/city/ottawa/mathnasium.png"
-        alt="Incogni"
-        sx={{
-          width: [120, 128, 270],
-          transformOrigin: '% 0%',
-          transition: 'transform 0.1s',
-          ':hover': {
-            transform: 'rotate(0.03turn) scale(1.2) translateY(-4px)'
-          }
-        }}
-      />
-      </Link> */}
-      <Link
-        // xyz
-        href="https://gen.xyz/"
-        target="_blank"
-        aria-label="Nord Pass"
-        sx={{ position: 'absolute', top: 550, left: 810, zIndex: 2 }}
-    >
-      <Image
-        src="/city/ottawa/xyz.png"
-        alt="Nord Pass"
-        sx={{
-          width: [120, 128, 325],
-          transformOrigin: '% 0%',
-          transition: 'transform 0.1s',
-          ':hover': {
-            transform: 'rotate(0.03turn) scale(1.2) translateY(-4px)'
-          }
-        }}
-      />
-      </Link>
-      <Link
-        // Saily
-        href="https://saily.com/ "
-        target="_blank"
-        aria-label="Saily"
-        sx={{ position: 'absolute', top: 400, left: 1150, zIndex: 2 }}
-    >
-      <Image
-        src="/city/hamilton/saily.png"
-        alt="Saily"
-        sx={{
-          width: [120, 128, 325],
-          transformOrigin: '% 0%',
-          transition: 'transform 0.1s',
-          ':hover': {
-            transform: 'rotate(0.03turn) scale(1.2) translateY(-4px)'
-          }
-        }}
-      />
-      </Link>
-        </Box>
       <Box
         sx={{
           width: '100%',
