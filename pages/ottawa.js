@@ -622,6 +622,21 @@ justifyContent: 'center',
     marginTop: '50px'
   }}
 >
+<Box
+          sx={{
+            position: 'absolute',
+            width: '80%',
+            height: "auto",
+            maxWidth: '1000px',
+            zIndex: 1,
+            display: ['none', 'none', 'block']
+          }}
+        >
+          <Image
+            src="/elements/thumbtack.png"
+            sx={{ position: "relative", left: '5%', top: '100%', width: '10%' }}
+          />
+  </Box>
 <Heading
             as="h1"
             sx={{
@@ -643,10 +658,67 @@ justifyContent: 'center',
   <Heading as="h2" sx={{textAlign: 'center', marginTop: '10px' }}>
     Sign up today for a scrappy adventure. Spots are limited!
   </Heading>
+
 </Box>
 
+<Link
+            href="https://forms.hackclub.com/scrapyard-signup?event=ottawa"
+            target="_blank"
+            style={{
+              textDecoration: 'none',
+              pointerEvents: 'auto'
+            }}
+          >
+            <Box
+              sx={{
+                backgroundImage: "url('/elements/yellow-strip@stretch.svg')",
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: '100% 100%',
+                filter: 'drop-shadow(1px 5px 5px #000)',
+                transition: 'transform 0.2s',
+                ':hover': {
+                  transform: 'scale(1.5)'
+                },
+                transform: 'scale(1.3)',
+                zIndex: 30,
+                minWidth: '8em',
+                padding: '15px',
+                textDecoration: 'none',
+                pointerEvents: 'auto',
+                position: 'relative',
+                m: 4
+              }}
+            >
+              <Heading
+                as="h2"
+                sx={{
+                  fontFamily: 'p22-stanyan',
+                  fontWeight: 'bold',
+                  textAlign: 'center',
+                  fontSize: ['1.4em', '1.6em'],
+                  textTransform: 'inherit!important',
+                  width: '100%',
+                  textDecoration: 'none',
+                  pointerEvents: 'auto'
+                }}
+              >
+                Sign&nbsp;up&nbsp;for&nbsp;Scrapyard
+              </Heading>
+            </Box>
+          </Link>
+          <img
+          src="/elements/paper-top.png"
+          style={{
+            position: 'relative',
+            top: '0px',
+            right: '0px',
+            width: '100%',
+            transform: 'translateY(+10%)',
+            zIndex: 20
+          }}
+        />
       </Box>
-
+      
       <Box
   sx={{
     display: 'flex',
@@ -680,6 +752,7 @@ background: "url('/backgrounds/lined-paper.png')",
             alignItems: 'center'
           }}
         >
+
           <Heading
             as="h1"
             sx={{
@@ -1023,7 +1096,7 @@ background: "url('/backgrounds/lined-paper.png')",
                 This hackathon is for creatives of all skill levels! We'll have
                 workshops and other events so join us and let's learn together.
                 If you'd like to start exploring some introductory projects,
-                check out Hack Club Workshops.
+                check out <Link href='https://workshops.hackclub.com/'>Hack Club Workshops</Link>.
               </>
             ),
             'What can I make at Scrapyard?': (
@@ -1056,14 +1129,13 @@ background: "url('/backgrounds/lined-paper.png')",
             ),
             'What if my parents are concerned?': (
               <>
-                We’re here to help! Our parents guide will be released soon, but
-                they can reach out to us at{' '}
+                We’re here to help! Ask them to reach out to {' '}
                 {/* TODO: Change this email to your event's email */}
-                <Link href="tishya.ottawa@scrapyard.hackclub.com">
+                <Link href="mailto:tishya.ottawa@scrapyard.hackclub.com">
                   {/* TODO: Change this email to your event's email */}
                   tishya.ottawa@scrapyard.hackclub.com
                 </Link>{' '}
-                for questions.
+                and we'll make sure to answer all their questions.
               </>
             ),
             'What if I have more questions?': (
